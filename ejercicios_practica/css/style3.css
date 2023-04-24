@@ -1,0 +1,77 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+    /* se eliminan todos los margin por defecto */
+    margin: 0;
+    /* se eliminan todos los padding por defecto */
+    padding: 0; 
+    /* se elimina el estilo de las listas */
+    list-style-type: none;
+    /* el padding y border se consideran para calcular
+     el tamaño de la caja */
+    box-sizing: border-box;
+    /* se elimina el subrayado de los links <a> */
+    text-decoration: none
+  }
+  
+  body {
+    display: grid;  /* Declara ante todo esta propiedad. los elementos en una columna */           
+    grid-template-rows: 200px 200px 200px 200px; /* Declara el tamaño de las filas */
+    grid-template-columns: 200px 200px 200px 200px; /* Declara el tamaño de las columnas */
+    grid-gap: 0px;  /* Declara el espacio entre columnas */
+  
+    grid-template-areas: 
+    "A A A A"
+    "B C C D"
+    "B C C D"
+    "E E E E";
+
+    justify-content: center;
+  }
+  
+  .grid-item1 {
+    grid-area: A;
+    text-align: center; /* Alinea el texto a la columna */
+    border: black 5px solid; /* Declara el borde de las columnas */
+    background-color:blue; /* Declara el color de fondo */
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .grid-item2 {
+    grid-area: B;
+    background: rgb(138, 33, 33); /* Declara el color de fondo */
+    text-align: center; /* Alinea el texto a la columna */
+    border: black 5px solid; /* Declara el borde de las columnas */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .grid-item3 {
+    grid-area: C;
+    background: aquamarine; /* Declara el color de fondo */
+    text-align: center; /* Alinea el texto a la columna */
+    border: black 5px solid; /* Declara el borde de las columnas */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .grid-item4 {
+    grid-area: D;
+    background:orange; /* Declara el color de fondo */
+    text-align: center; /* Alinea el texto a la columna */
+    border: black 5px solid; /* Declara el borde de las columnas */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .grid-item5 {
+    grid-area: E;
+    background: white; /* Declara el color de fondo */
+    text-align: center; /* Alinea el texto a la columna */
+    border: black 5px solid; /* Declara el borde de las columnas */
+    font-size: large;
+    font-style: oblique;
+  }
+
+  img{
+    width:100px;
+    height: 100px;
+  }

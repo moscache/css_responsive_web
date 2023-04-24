@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0; 
+    /* se elimina el estilo de las listas */
+  list-style-type: none;
+  }
+
+nav ul{
+    background-color:black ;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 15px;
+  }
+
+  img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .alterar{
+    width: 35px;
+    height: 35px;
+  }
+  .rostro{
+    width: 55px;
+    height: 55px;
+  }
+
+section{
+    display: grid;  /* Declara ante todo esta propiedad. los elementos en una columna */           
+    grid-template-columns: repeat(auto-fit,minmax(100px,250px));
+    grid-gap: 10px;  /* Declara el espacio entre columnas */
+    justify-content: center;
+  }
+.caja1{
+  background-color: rgba(255, 0, 234, 0.543);
+  padding: 10px;
+  color: aqua;
+  border: 1px solid;
+  text-align: center;
+}

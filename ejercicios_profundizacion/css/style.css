@@ -5,6 +5,9 @@
 }
 
 body {
+  display: grid;  /* Declara ante todo esta propiedad. los elementos en una columna */           
+  grid-template-columns: repeat(auto-fit,minmax(100px,250px));
+  grid-gap: 10px;  /* Declara el espacio entre columnas */
   height: 100%;
   width: 100vw;
   background-image: radial-gradient(
@@ -15,6 +18,18 @@ body {
     #1e2020,
     #161718
   );
+}
+
+article{
+  width: fit-content;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.nombre{
+  color:black;
+  font-size: 25px;
+  text-align: center;
 }
 
 /* ----------- ALUMNO ----------------- */
@@ -64,5 +79,13 @@ body {
     circle,
     rgba(255, 255, 255, 1) 0%,
     rgb(104, 40, 90) 100%
+  );
+}
+
+.bicho {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(126, 185, 22) 100%
   );
 }
